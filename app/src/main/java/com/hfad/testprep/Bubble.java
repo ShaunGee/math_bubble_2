@@ -130,6 +130,17 @@ public class Bubble {
         return clicked;
     }
 
+
+    public  PointF getPosition(){
+
+        PointF pos = new PointF();
+        pos.x = bubblePosX;
+        pos.y = bubblePosY;
+
+        return pos;
+
+    }
+
     public boolean isCorrect(String answer) {
         boolean correct = false;
         if (bubbleAnswers.checkAnswerr(answer)) {
@@ -146,5 +157,13 @@ public class Bubble {
         } else {
             horizontalDir = -1;
         }
+    }
+
+    public boolean comparePosition(PointF position) {
+        boolean touched = false;
+        if (position.y > bubblePosY - size || position.y < bubblePosY + size || position.x > bubblePosX - size || position.x < bubblePosX + size){
+            touched = true;
+        }
+        return touched;
     }
 }

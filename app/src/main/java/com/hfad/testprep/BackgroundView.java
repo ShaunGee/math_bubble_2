@@ -65,7 +65,12 @@ public class BackgroundView extends View {
             if (game.getRoundActiveStatus()) {
                 for (int i = 0; i < bubbles.size(); i++) {
                     //create a list of bubbles here
+                    for (int x = 0; x < bubbles.size(); x++){
+                        if (bubbles.get(i).comparePosition(bubbles.get(i).getPosition())){
+                            System.out.println("same position");
+                        }
 
+                    }
 
                     if (bubbles.get(i).exists() & !bubbles.get(i).getPoppedStatus()) {
                         bubbles.get(i).moveBubble();
