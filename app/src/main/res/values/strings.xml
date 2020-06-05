@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Math Bubbles</string>
+    <string name="app_name">Math Bubbles 2</string>
     <string name="main_menu_settings">Settings</string>
-    <string name="main_menu_score_board">Score Board</string>
+    <string name="main_menu_score_board">Leaderboard</string>
     <string name="main_menu_play">Play</string>
     <string name="difficulty_easy">Easy</string>
     <string name="difficulty_medium">Medium</string>
@@ -35,5 +35,8 @@
         <item>HARD</item>
 
     </string-array>
+
+
+
 
 </resources>
